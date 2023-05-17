@@ -1,8 +1,8 @@
-const newIdGenerator = prefix => {
+const newIdGenerator = call => {
   let counter = 1;
 
   return () => {
-    const id = `${prefix}-${counter}`;
+    const id = `${call}-${counter}`;
     counter++;
     return id;
   };
